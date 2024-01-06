@@ -1,0 +1,26 @@
+
+@-webkit-keyframes walk
+{
+	0%
+	{
+		-webkit-transform:rotateZ(5deg);
+	}
+
+	50%
+	{
+		-webkit-transform:rotateZ(-5deg);
+	}
+
+	100%
+	{
+		-webkit-transform:rotateZ(5deg);
+	}
+}
+
+.walk
+{
+	-webkit-animation-name: walk;
+	-webkit-animation-duration: 1s;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+}
