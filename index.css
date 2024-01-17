@@ -28,7 +28,39 @@
 		opacity: 1;
 	}
 }
+@-webkit-keyframes h
+{
+	0%
+	{
+		opacity: 0; 
+	}
 
+	100%
+	{
+		-webkit-transform:scale(1,0.5);
+	}
+}
+
+.btn2
+{
+            cursor: pointer;
+            border: 0px transparent;
+            background-color: transparent;
+            height: 50px;
+            width: 400px;
+            color: white;
+            font-size: 1.5em;
+		font-weight: bolder;
+		font-family: monospace;
+            box-shadow: 0 0px 0px rgba(0, 0, 0, 0.6);
+	transition: 0.5s;
+}
+.btn2:hover
+{
+	-webkit-animation-name: h;
+	-webkit-animation-duration: 0.5s;
+	-webkit-animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+}
 .walk
 {
 	-webkit-animation-name: walk;
