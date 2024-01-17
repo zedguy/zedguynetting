@@ -55,12 +55,6 @@
             box-shadow: 0 0px 0px rgba(0, 0, 0, 0.6);
 	transition: 0.5s;
 }
-.btn2:hover
-{
-	-webkit-animation-name: h;
-	-webkit-animation-duration: 0.5s;
-	-webkit-animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
-}
 .walk
 {
 	-webkit-animation-name: walk;
