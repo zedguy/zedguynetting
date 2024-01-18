@@ -58,7 +58,7 @@
 .walk
 {
 	-webkit-animation-name: walk;
-	-webkit-animation-duration: 1.5s;
+	-webkit-animation-duration: 2.5s;
 	-webkit-animation-iteration-count: infinite;
 	-webkit-animation-timing-function: linear;
 }
