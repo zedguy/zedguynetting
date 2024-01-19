@@ -1,19 +1,19 @@
 
-@-webkit-keyframes walk
+@-webkit-keyframes floatrotate
 {
 	0%
 	{
-		-webkit-transform:rotatex(0deg);
+		-webkit-transform:rotatex(-5deg);
 	}
 
 	50%
 	{
-		-webkit-transform:rotatex(45deg);
+		-webkit-transform:rotatex(5deg);
 	}
 
 	100%
 	{
-		-webkit-transform:rotatex(0deg);
+		-webkit-transform:rotatex(-5deg);
 	}
 }
 @-webkit-keyframes float
@@ -84,6 +84,7 @@
 .float
 {
 	-webkit-animation-name: float;
+	-webkit-animation-name: floatrotate;
 	-webkit-animation-duration: 2.5s;
 	-webkit-animation-iteration-count: infinite;
 	-webkit-animation-timing-function: ease-in-out;
