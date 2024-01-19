@@ -16,6 +16,23 @@
 		-webkit-transform:rotatex(0deg);
 	}
 }
+@-webkit-keyframes float
+{
+	0%
+	{
+		-webkit-transform:translate(0px,0%);
+	}
+
+	50%
+	{
+		-webkit-transform:translate(0px,2%);
+	}
+
+	100%
+	{
+		-webkit-transform:translate(0px,0%);
+	}
+}
 @-webkit-keyframes fade
 {
 	0%
@@ -60,6 +77,13 @@
 .walk
 {
 	-webkit-animation-name: walk;
+	-webkit-animation-duration: 2.5s;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-timing-function: linear;
+}
+.float
+{
+	-webkit-animation-name: float;
 	-webkit-animation-duration: 2.5s;
 	-webkit-animation-iteration-count: infinite;
 	-webkit-animation-timing-function: linear;
