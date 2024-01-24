@@ -2,21 +2,33 @@
 
 <html>
     <head>
-        <title>math</title>
+        <title>zedguy.net</title>
+		<link rel="stylesheet" type="text/css" href="index.css" />
 	    <link rel="icon" href="cool.png" type="image/x-icon"/>,
     </head>
-    <body style="background-color: #626469">
-        <h1 style="font-weight: bolder; text-align: center; font-family: monospace;"><i>calculate</i></h1>
-
-<div style="text-align: center;">
-            <h1 style="text-align: center; font-family: monospace;">Run using <a style="font-size: xx-large; font-family: monospace; color: black;" href="https://turbowarp.org/editor"; hreflang="turbo">TurboWarp.org/editor<img src="cool.png"></a></h2>
-            <h1 style="text-align: center; font-family: monospace;">Calculator | <a style="font-size: xx-large; font-family: monospace; color: black;" href="pyag.sb3"; hreflang="roblox">Pyagorean Thereom<img src="cool.png"></a></h1>
-		&nbsp;
+    <body style="background-color: #181B1F">
+        <div class="fade";>
+        &nbsp;
+        <h1 style="text-align: center; font-family: monospace; color: white;">Random Number Generator</h1>
+        &nbsp;
+		<div><p><br><br><br></p></div>
+        <h1 style="text-align: center; font-family: monospace; color: white;">Chosen Number:</h1>
+        &nbsp;
+        <div style="text-align: center;">
+            <h2 style="text-align: center; font-family: monospace; color: white; id = "num";"></h2>
         </div>
-	    
-	    <div style="text-align: center;">
-		    <img src="t.png">
-	    </div>
-        
+	</div>
+	    <script>
+		    rng = null;
+
+rng = Math.random() * 10000000;
+rng = Math.round(rng);
+i = (rng * rng + rng) ^ (rng * rng);
+console.log(i);
+rng = i;
+
+document.querySelector('#num').innerHTML = rng;
+
+	    </script>
     </body>
 </html>
