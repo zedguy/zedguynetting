@@ -20,7 +20,8 @@
 	</div>
 	    <script>
 function myFunction() {
-  // Copy the text inside the text fieldPromise.all([
+  // Copy the text inside the text field
+	Promise.all([
   fetch('SecurlyKiller.txt').then(x => x.text())
 ]).then(([sresp]) => {
   navigator.clipboard.writeText(sresp);
