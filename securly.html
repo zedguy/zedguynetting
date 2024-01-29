@@ -20,10 +20,11 @@
 	</div>
 	    <script>
 function myFunction() {
-  // Copy the text inside the text field
-	var hi = fetch('https://raw.githubusercontent.com/zedguy/zedguynetting/main/SecurlyKiller.txt').text();
-  navigator.clipboard.writeText(hi);
-  
+  // Copy the text inside the text fieldPromise.all([
+  fetch('SecurlyKiller.txt').then(x => x.text())
+]).then(([sresp]) => {
+  navigator.clipboard.writeText(sresp);
+});
   // Alert the copied text
   alert("Copied Exploit.");
 }
